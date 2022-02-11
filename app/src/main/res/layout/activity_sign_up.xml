@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".authentication.SignUpActivity"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1AFFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".authentication.LoginActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:text="@string/Sign_Up"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_edit_text"
+            android:gravity="center"
+            android:hint="@string/Username"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:ignore="TextContrastCheck"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_edit_text"
+            android:gravity="center"
+            android:hint="@string/Password"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            tools:ignore="TextContrastCheck"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_edit_text"
+            android:gravity="center"
+            android:hint="@string/Confirm_Password"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            tools:ignore="TextContrastCheck"
+            android:inputType="textPassword" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_login_button"
+            android:text="@string/Sign_Up"
+            android:textAllCaps="false"
+            android:textColor="#FFFBF6"
+            android:textSize="17sp"
+            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:background="#80FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/Sign_In"
+            android:textColor="#FFFBF6"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
