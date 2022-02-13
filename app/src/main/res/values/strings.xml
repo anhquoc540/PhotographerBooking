@@ -1,10 +1,24 @@
 <resources>
     <string name="app_name">PhotographerBooking</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="Sign_In">Sign In</string>
-    <string name="Username">Username</string>
-    <string name="Password">Password</string>
-    <string name="Confirm_Password">Confirm password</string>
-    <string name="Log_In">Log In</string>
-    <string name="Sign_Up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username_email">Username or email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="no_account">No account yet? Create one</string>
+    <string name="already_account">Already have account? Login</string>
+    <string name="forgot_password">Forget password</string>
+    <string name="type_email">Type your email</string>
+    <string name="send">Send</string>
+    <string name="email_instruction">No worries! Enter your email and we will send you a reset.</string>
+    <string name="log_in">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome_back">Hey, Welcome Back</string>
+    <string name="let_get">Let\'s get</string>
+    <string name="started">Started!</string>
+    <string name="hello">Hello</string>
+    <string name="beautiful">Beautiful,</string>
+    <string name="sign_up_instruction">Enter your information below to sign up with us</string>
+    <string name="space"> </string>
 </resources>

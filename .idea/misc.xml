@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ASM_HCI/PhotographerBooking/app/src/main/res/drawable/circle.xml" value="0.22447916666666667" />
+        <entry key="..\:/ASM_HCI/PhotographerBooking/app/src/main/res/drawable/custom_login_button.xml" value="0.22447916666666667" />
+        <entry key="..\:/ASM_HCI/PhotographerBooking/app/src/main/res/drawable/edit_text_background.xml" value="0.22447916666666667" />
+        <entry key="..\:/ASM_HCI/PhotographerBooking/app/src/main/res/drawable/login_btn_background.xml" value="0.22447916666666667" />
+        <entry key="..\:/ASM_HCI/PhotographerBooking/app/src/main/res/drawable/tab_indicator.xml" value="0.22447916666666667" />
+        <entry key="..\:/ASM_HCI/PhotographerBooking/app/src/main/res/layout/activity_authentication.xml" value="0.19635416666666666" />
+        <entry key="..\:/ASM_HCI/PhotographerBooking/app/src/main/res/layout/activity_main.xml" value="0.19814814814814816" />
+        <entry key="..\:/ASM_HCI/PhotographerBooking/app/src/main/res/layout/activity_sign_in.xml" value="0.20416666666666666" />
+        <entry key="..\:/ASM_HCI/PhotographerBooking/app/src/main/res/layout/fragment_sign_in.xml" value="0.184375" />
+        <entry key="..\:/ASM_HCI/PhotographerBooking/app/src/main/res/layout/fragment_sign_up.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidStudioProjects/PhotographerBooking/app/src/main/res/layout/activity_main.xml" value="0.22554347826086957" />
         <entry key="..\:/AndroidStudioProjects/PhotographerBooking/app/src/main/res/layout/fragment_home.xml" value="0.22554347826086957" />
         <entry key="..\:/WORKPLACE/AndroidStudioRepo/ASM_HCI_1/PhotographerBooking/app/src/main/res/drawable/button_login.xml" value="0.22447916666666667" />
