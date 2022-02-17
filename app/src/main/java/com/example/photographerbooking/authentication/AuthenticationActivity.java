@@ -1,23 +1,22 @@
 package com.example.photographerbooking.authentication;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.lifecycle.Lifecycle;
-import androidx.lifecycle.LifecycleObserver;
-import androidx.viewpager2.adapter.FragmentStateAdapter;
-import androidx.viewpager2.widget.ViewPager2;
-
+import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
+
 import com.example.photographerbooking.R;
+import com.example.photographerbooking.helper.SoftKeyBoardHelper;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
@@ -43,6 +42,7 @@ public class AuthenticationActivity extends AppCompatActivity {
         Log.d("AUTHEN ACTIVITY", "DESTROYED");
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +64,11 @@ public class AuthenticationActivity extends AppCompatActivity {
             p.setMargins(0, 0, 100, 0);
             tab.requestLayout();
         }
+
+        findViewById(R.id.authentication_view).setOnTouchListener((view, motionEvent) -> {
+            SoftKeyBoardHelper.hideSoftKeyboard(AuthenticationActivity.this);
+            return true;
+        });
     }
 
     private void prepareViewPager(ViewPager2 viewPager) {
@@ -72,10 +77,11 @@ public class AuthenticationActivity extends AppCompatActivity {
 
         MainAdapter adapter = new MainAdapter(this,fragmentList);
         viewPager.setAdapter(adapter);
+        viewPager.setOffscreenPageLimit(fragmentList.size());
     }
 
     private class MainAdapter extends FragmentStateAdapter {
-        List<Fragment> fragmentList = new ArrayList<>();
+        List<Fragment> fragmentList;
 
         public MainAdapter(@NonNull FragmentActivity fragmentActivity, List<Fragment> fragmentList) {
             super(fragmentActivity);

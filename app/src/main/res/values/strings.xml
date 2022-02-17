@@ -3,9 +3,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="sign_in">Sign In</string>
     <string name="username_email">Username or email</string>
+    <string name="choose_username">Choose your username</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm password</string>
     <string name="forget_password"><u>Forget password?</u></string>
+    <string name="remember_me">Remember me</string>
     <string name="no_account">No account yet? Create one</string>
     <string name="already_account">Already have account? Login</string>
     <string name="forgot_password">Forget password</string>
@@ -21,4 +23,5 @@
     <string name="beautiful">Beautiful,</string>
     <string name="sign_up_instruction">Enter your information below to sign up with us</string>
     <string name="space">\u0020</string>
+    <string name="app_icon">Application icon</string>
 </resources>
