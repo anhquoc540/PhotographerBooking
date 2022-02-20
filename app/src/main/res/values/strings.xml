@@ -43,5 +43,10 @@
     <string name="contact">Contact</string>
     <string name="booking">Booking</string>
     <string name="portfolio">Portfolio</string>
-
+    <string name="speciality_album">Speciality Album</string>
+    <string name="see_all_albums"><u>All albums</u> ></string>
+    <string name="see_all_reviews"><u>All reviews</u> ></string>
+    <string name="rating_and_reviews">Rating and Reviews</string>
+    <string name="review_number">29 Reviews</string>
+    <string name="rating_example">4.6</string>
 </resources>

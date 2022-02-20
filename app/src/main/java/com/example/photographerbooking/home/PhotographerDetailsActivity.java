@@ -2,6 +2,7 @@ package com.example.photographerbooking.home;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ViewFlipper;
@@ -27,6 +28,14 @@ public class PhotographerDetailsActivity extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        if (true) {
+            StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
+                    .detectDiskReads()
+                    .detectDiskWrites()
+                    .detectNetwork()   // or .detectAll() for all detectable problems
+                    .penaltyLog()
+                    .build());
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.photographer_details);
 
