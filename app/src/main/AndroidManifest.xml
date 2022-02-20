@@ -11,6 +11,7 @@
         android:theme="@style/Theme.PhotographerBooking"
         android:fullBackupContent="true">
         <activity android:name=".MainActivity"/>
+        <activity android:name=".home.PhotographerDetailsActivity"/>
         <activity
             android:name=".authentication.AuthenticationActivity"
             android:exported="true"

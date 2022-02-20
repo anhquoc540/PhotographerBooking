@@ -11,6 +11,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
@@ -22,9 +23,11 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class SignInFragment extends Fragment implements View.OnClickListener {
 
     private final String REQUIRE = "Require";
+    private final String INVALID = "Wrong username or password";
     private View view;
     private EditText etUsername;
     private EditText etPassword;
+    private TextView tvError;
     private FloatingActionButton btnLogin;
 
     public SignInFragment() {}
@@ -36,6 +39,8 @@ public class SignInFragment extends Fragment implements View.OnClickListener {
         etUsername = view.findViewById(R.id.etUsername);
         etPassword = view.findViewById(R.id.etPassword);
         btnLogin = view.findViewById(R.id.btnLogin);
+        tvError = view.findViewById(R.id.tvError);
+        tvError.setText("");
 
         btnLogin.setOnClickListener(this);
 
@@ -75,12 +80,18 @@ public class SignInFragment extends Fragment implements View.OnClickListener {
     }
 
     private boolean checkLogin() {
-        if (TextUtils.isEmpty(etUsername.getText().toString())) {
+        String username = etUsername.getText().toString();
+        String password = etPassword.getText().toString();
+        if (TextUtils.isEmpty(username)) {
             etUsername.setError(REQUIRE);
             return false;
         }
-        if (TextUtils.isEmpty(etPassword.getText().toString())) {
+        if (TextUtils.isEmpty(password)) {
             etPassword.setError(REQUIRE);
+            return false;
+        }
+        if (!TextUtils.equals(username, "admin") || !TextUtils.equals(password, "admin")) {
+            tvError.setText(INVALID);
             return false;
         }
         return true;

@@ -14,7 +14,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginVertical="20dp"
         android:paddingBottom="40dp"
-        android:elevation="8dp"
+        android:elevation="5dp"
         android:background="@drawable/round_page_background">
 
         <LinearLayout
@@ -139,7 +139,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="50dp"
-            android:background="@drawable/login_btn_background"
+            android:background="@drawable/round_button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etConfirmPassword"
             app:layout_constraintWidth_percent="0.5">
@@ -165,7 +165,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="SpeakableTextPresentCheck"
-                app:backgroundTint="@color/orange"
+                android:backgroundTint="@color/primary_color"
                 android:contentDescription="@string/sign_up" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
