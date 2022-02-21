@@ -10,17 +10,19 @@
         android:id="@+id/txtTopPGTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
         android:text="Top Photographers :"
         android:textSize="30dp" />
 
     <ScrollView
         android:id="@+id/svTopPG"
-        android:layout_width="423dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rectangle">
+        android:background="@drawable/rectangle"
+        android:elevation="10dp">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <androidx.recyclerview.widget.RecyclerView
@@ -30,28 +32,35 @@
         </LinearLayout>
     </ScrollView>
 
-    <ScrollView
-        android:id="@+id/svCategory"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/txtCategoryLabel"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="49dp"
+            android:paddingHorizontal="10dp"
+            android:text="Looking for :"
+            android:textSize="35dp" />
 
-            <TextView
-                android:id="@+id/txtCategoryLabel"
-                android:layout_width="match_parent"
-                android:layout_height="49dp"
-                android:paddingHorizontal="10px"
-                android:text="Looking for :"
-                android:textSize="35dp"/>
+        <ScrollView
+            android:id="@+id/svCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvCategoryList"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="431dp" />
-        </LinearLayout>
-    </ScrollView>
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCategoryList"
+                    android:layout_width="match_parent"
+                    android:layout_height="434dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
 </LinearLayout>

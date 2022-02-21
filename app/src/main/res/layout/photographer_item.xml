@@ -40,6 +40,7 @@
                     android:layout_height="45dp"
                     android:paddingVertical="2dp"
                     android:text="TextView"
+                    android:textSize="20dp"
                     android:textAlignment="center" />
 
                 <TextView
@@ -47,6 +48,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:paddingVertical="2dp"
+                    android:textSize="20dp"
                     android:text="TextView"
                     android:textAlignment="center" />
             </LinearLayout>
