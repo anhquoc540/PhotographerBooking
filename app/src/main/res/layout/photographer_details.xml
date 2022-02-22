@@ -10,7 +10,7 @@
 <!--Wallpaper-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:layout_height="300dp"
         android:gravity="center"
         android:background="@drawable/wallpaper_background">
 
@@ -25,14 +25,14 @@
                 android:layout_height="match_parent"
                 android:layout_weight="3"
                 android:layout_marginStart="10dp"
-                app:srcCompat="@drawable/img"
+                app:srcCompat="@drawable/img_2"
                 android:contentDescription="@string/image" />
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="7"
-                android:paddingStart="15dp"
+                android:paddingStart="10dp"
                 android:orientation="vertical"
                 tools:ignore="RtlSymmetry">
 
@@ -40,16 +40,18 @@
                     android:id="@+id/full_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Zhou Shen"
+                    android:text="Amelia Brown"
                     android:textColor="@color/white"
-                    android:textSize="25sp"/>
+                    android:textSize="23sp" />
+
                 <TextView
                     android:id="@+id/address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Shang Hai, China"
                     android:layout_marginBottom="10dp"
-                    android:textColor="@color/white"/>
+                    android:text="4459 Wyatt Street, United States"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -108,7 +110,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginVertical="0dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="10dp"
                         android:layout_marginEnd="22dp"
                         android:background="@drawable/round_button"
                         android:text="@string/follow"
@@ -130,16 +132,16 @@
         android:layout_height="match_parent"
         android:scrollbars="none">
 
-<!--Detail Content-->
+        <!--Detail Content-->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="230dp"
+            android:layout_marginTop="260dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/border_top_rectangle">
 
-<!--Portfolio-->
+            <!--Portfolio-->
             <LinearLayout
                 android:id="@+id/detail"
                 android:layout_width="match_parent"
@@ -154,169 +156,88 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="30sp"
-                    android:fontFamily="cursive"
+                    android:layout_marginVertical="30sp"
                     android:text="@string/portfolio"
-                    android:textStyle="bold"
-                    android:textAlignment="center"
-                    android:textColor="@color/primary_color"
-                    android:textSize="35sp" />
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
                     android:text="@string/experience_years"
-                    android:textStyle="bold"
-                    android:textColor="@color/primary_color"
-                    android:textSize="18sp" />
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
                     android:text="5"
-                    android:textSize="17sp"
-                    android:textColor="@color/primary_color"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="20dp"/>
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:textStyle="bold"
                     android:text="@string/specialize"
-                    android:textColor="@color/primary_color"
-                    android:textSize="18sp" />
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
                     android:text="@string/specialization_1"
-                    android:textColor="@color/primary_color"
-                    android:layout_marginTop="10dp"
-                    android:textSize="17sp"
-                    android:layout_marginBottom="20dp"/>
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:textStyle="bold"
                     android:text="@string/favorite_spot"
-                    android:textColor="@color/primary_color"
-                    android:textSize="18sp" />
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="60dp"
                     android:text="@string/spot_1"
-                    android:textColor="@color/primary_color"
-                    android:layout_marginTop="10dp"
-                    android:textSize="17sp"
-                    android:layout_marginBottom="20dp" />
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:textStyle="bold"
-                    android:text="@string/pricing_information"
-                    android:textColor="@color/primary_color"
-                    android:textSize="18sp" />
+                    android:text="@string/service_package"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/personal_shoot"
-                    android:textColor="@color/primary_color"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/service_package"
                     android:layout_marginTop="20dp"
-                    android:textSize="17sp"
-                    android:layout_marginBottom="10dp" />
-
-                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="$160 AU"
-                    android:textStyle="bold"
-                    android:textColor="@color/primary_color"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/per_session"
-                    android:textSize="17sp"
-                    android:textColor="@color/primary_color"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="20dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/commercial_shoot"
-                    android:textColor="@color/primary_color"
-                    android:textSize="17sp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:textStyle="bold"
-                    android:text="$700 AU"
-                    android:textColor="@color/primary_color"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/per_day"
-                    android:textSize="17sp"
-                    android:textColor="@color/primary_color"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="20dp"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/event_shoot"
-                    android:textSize="17sp"
-                    android:textColor="@color/primary_color"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:textStyle="bold"
-                    android:text="@string/not_available"
-                    android:textColor="@color/primary_color"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/per_hour"
-                    android:textSize="17sp"
-                    android:textColor="@color/primary_color"
-                    android:layout_marginTop="10dp" />
+                    android:layout_height="wrap_content"/>
 
             </LinearLayout>
 
-<!--Speciality Album-->
+            <!--Speciality Album-->
             <TextView
                 android:id="@+id/speciality_album"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="23dp"
-                android:layout_marginTop="40dp"
-                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="60dp"
                 android:text="@string/speciality_album"
-                android:textColor="@color/primary_color"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -326,20 +247,20 @@
                 android:id="@+id/see_all_albums"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/see_all_albums"
-                android:textColor="@color/primary_color"
-                android:layout_marginBottom="15dp"
                 android:layout_marginEnd="23dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/see_all_albums"
+                android:textColor="@color/black"
                 android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/view_flipper" />
+                app:layout_constraintBottom_toTopOf="@id/view_flipper"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-<!--ViewFlipper-->
+            <!--ViewFlipper-->
             <ViewFlipper
                 android:id="@+id/view_flipper"
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
-                android:layout_marginTop="15dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
                 android:autoStart="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -349,50 +270,50 @@
                     android:id="@+id/iv_img1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/image"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/img1"
-                    android:contentDescription="@string/image" />
+                    app:srcCompat="@drawable/img_3" />
 
                 <ImageView
                     android:id="@+id/iv_img2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/image"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/img2"
-                    android:contentDescription="@string/image" />
+                    app:srcCompat="@drawable/img_4" />
 
                 <ImageView
                     android:id="@+id/iv_img3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/image"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/img3"
-                    android:contentDescription="@string/image" />
+                    app:srcCompat="@drawable/img_5" />
 
                 <ImageView
                     android:id="@+id/iv_img4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/image"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/img4"
-                    android:contentDescription="@string/image" />
+                    app:srcCompat="@drawable/img_6" />
 
                 <ImageView
                     android:id="@+id/iv_img5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/image"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/img5"
-                    android:contentDescription="@string/image" />
+                    app:srcCompat="@drawable/img_7" />
             </ViewFlipper>
 
             <TextView
                 android:id="@+id/tv_img_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:text="@string/example_content"
                 android:textColor="@color/white"
-                android:layout_margin="8dp"
                 app:layout_constraintEnd_toEndOf="@+id/view_flipper"
                 app:layout_constraintTop_toTopOf="@+id/view_flipper" />
 
@@ -401,36 +322,35 @@
                 android:layout_width="38dp"
                 android:layout_height="100dp"
                 android:background="#23000000"
+                android:contentDescription="@string/image"
                 android:src="@drawable/ic_navigate_next_24"
                 app:layout_constraintBottom_toBottomOf="@+id/view_flipper"
                 app:layout_constraintEnd_toEndOf="@+id/view_flipper"
                 app:layout_constraintTop_toTopOf="@+id/view_flipper"
-                tools:ignore="SpeakableTextPresentCheck"
-                android:contentDescription="@string/image" />
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageButton
                 android:id="@+id/btn_previous"
                 android:layout_width="38dp"
                 android:layout_height="100dp"
                 android:background="#23000000"
+                android:contentDescription="@string/image"
                 android:src="@drawable/ic_navigate_before_24"
                 app:layout_constraintBottom_toBottomOf="@+id/view_flipper"
                 app:layout_constraintStart_toStartOf="@+id/view_flipper"
                 app:layout_constraintTop_toTopOf="@+id/view_flipper"
-                tools:ignore="SpeakableTextPresentCheck"
-                android:contentDescription="@string/image" />
+                tools:ignore="SpeakableTextPresentCheck" />
 
-<!--Review Overview-->
+            <!--Review Overview-->
             <TextView
                 android:id="@+id/rating_and_review"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="23dp"
-                android:layout_marginTop="40dp"
-                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="60dp"
                 android:text="@string/rating_and_reviews"
-                android:textColor="@color/primary_color"
-                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/view_flipper" />
@@ -448,7 +368,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="23dp"
                     android:text="@string/rating_example"
-                    android:textColor="@color/primary_color"
+                    android:textColor="@color/black"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -471,11 +391,11 @@
                     android:id="@+id/separate_line"
                     android:layout_width="1dp"
                     android:layout_height="16dp"
-                    android:background="@color/primary_color"
                     android:layout_marginStart="5dp"
+                    android:background="@color/black"
                     app:layout_constraintBottom_toBottomOf="@+id/average_rating_bar_2"
                     app:layout_constraintStart_toEndOf="@+id/average_rating_bar_2"
-                    app:layout_constraintTop_toTopOf="@+id/average_rating_bar_2"/>
+                    app:layout_constraintTop_toTopOf="@+id/average_rating_bar_2" />
 
                 <TextView
                     android:id="@+id/review_number"
@@ -483,7 +403,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:text="@string/review_number"
-                    android:textColor="@color/primary_color"
+                    android:textColor="@color/black"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="@+id/separate_line"
                     app:layout_constraintStart_toEndOf="@+id/separate_line"
@@ -495,7 +415,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="23dp"
                     android:text="@string/see_all_reviews"
-                    android:textColor="@color/primary_color"
+                    android:textColor="@color/black"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -503,12 +423,12 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--Review Comments-->
+            <!--Review Comments-->
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="23dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="23dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -549,8 +469,9 @@
                         android:id="@+id/iv_reviewer_avatar_1"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:contentDescription="@string/image"
                         android:scaleType="centerCrop"
-                        android:contentDescription="@string/image" />
+                        app:srcCompat="@drawable/img_6"/>
                 </androidx.cardview.widget.CardView>
 
                 <RatingBar
@@ -560,7 +481,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:numStars="5"
-                    android:rating="3"
+                    android:rating="4"
                     android:stepSize="1"
                     android:theme="@style/MyRatingBar"
                     app:layout_constraintStart_toStartOf="parent"
@@ -612,7 +533,8 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:contentDescription="@string/image"
-                        android:scaleType="centerCrop" />
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/img_6"/>
                 </androidx.cardview.widget.CardView>
 
                 <RatingBar
@@ -622,7 +544,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:numStars="5"
-                    android:rating="3"
+                    android:rating="5"
                     android:stepSize="1"
                     android:theme="@style/MyRatingBar"
                     app:layout_constraintStart_toStartOf="parent"
@@ -674,7 +596,8 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:contentDescription="@string/image"
-                        android:scaleType="centerCrop" />
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/img_6"/>
                 </androidx.cardview.widget.CardView>
 
                 <RatingBar
@@ -721,6 +644,7 @@
             android:background="@null"
             android:padding="10dp"
             android:src="@drawable/ic_navigate_before_24"
+            android:contentDescription="@string/image"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     </LinearLayout>
@@ -738,7 +662,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/contact"
+            android:text="@string/chat"
             android:background="@drawable/rectangle_button"
             android:textColor="@color/white"/>
 

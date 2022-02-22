@@ -30,7 +30,7 @@
     <string name="experience_years">Years of experience</string>
     <string name="specialize">I specialize in</string>
     <string name="favorite_spot">My favorite spot to shoot in the city is…</string>
-    <string name="pricing_information">Pricing Information</string>
+    <string name="service_package">Service Packages</string>
     <string name="not_available">Not available</string>
     <string name="personal_shoot">Personal photo shoots starting at</string>
     <string name="commercial_shoot">Commercial photo shoots starting at</string>
@@ -40,7 +40,7 @@
     <string name="per_hour">per hour</string>
     <string name="specialization_1">Product Photography, Fashion,<br/>Business headshots, Portraits,<br/>Food<br/>Fitness Photos for Personal Trainers,<br/>Promotional Photos for Social media</string>
     <string name="spot_1">Wellington Point, The LightHouse Raby Bay</string>
-    <string name="contact">Contact</string>
+    <string name="chat">Chat</string>
     <string name="booking">Booking</string>
     <string name="portfolio">Portfolio</string>
     <string name="speciality_album">Speciality Album</string>

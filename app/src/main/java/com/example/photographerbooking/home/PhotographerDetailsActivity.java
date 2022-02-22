@@ -2,7 +2,6 @@ package com.example.photographerbooking.home;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.os.StrictMode;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ViewFlipper;
@@ -13,49 +12,41 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.photographerbooking.R;
-import com.example.photographerbooking.adapter.CommentAdapter;
-import com.example.photographerbooking.dto.CommentDTO;
+import com.example.photographerbooking.adapter.ServicePackageAdapter;
+import com.example.photographerbooking.dto.ServicePackageDTO;
 
 import java.util.ArrayList;
 
 public class PhotographerDetailsActivity extends AppCompatActivity {
-    RecyclerView comment_recycler_view;
-    CommentAdapter comment_adapter;
-    ArrayList<CommentDTO> comment_array = new ArrayList<>();
+    RecyclerView service_package;
+    ServicePackageAdapter package_adapter;
+    ArrayList<ServicePackageDTO> package_list;
     ViewFlipper view_flipper;
     ImageButton btn_next, btn_previous;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        if (true) {
-            StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
-                    .detectDiskReads()
-                    .detectDiskWrites()
-                    .detectNetwork()   // or .detectAll() for all detectable problems
-                    .penaltyLog()
-                    .build());
-        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.photographer_details);
 
-//        setCommentData();
+        setServicePackageData();
         binding();
-//        setUpRecyclerView();
+        setUpRecyclerView();
         setFunctionForButton();
     }
 
     private void binding() {
-//        comment_recycler_view = findViewById(R.id.comment_recycler_view);
+        service_package = findViewById(R.id.service_package);
         view_flipper = findViewById(R.id.view_flipper);
         btn_next = findViewById(R.id.btn_next);
         btn_previous = findViewById(R.id.btn_previous);
     }
 
     private void setUpRecyclerView() {
-        comment_adapter = new CommentAdapter(comment_array);
-        comment_recycler_view.setAdapter(comment_adapter);
-        comment_recycler_view.setLayoutManager(new LinearLayoutManager(this));
+        package_adapter = new ServicePackageAdapter(package_list);
+        service_package.setAdapter(package_adapter);
+        service_package.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
     }
 
     private void setFunctionForButton() {
@@ -78,9 +69,10 @@ public class PhotographerDetailsActivity extends AppCompatActivity {
         });
     }
 
-    private void setCommentData() {
-        comment_array.add(new CommentDTO("Lloyd", "Lucires", R.drawable.img, 5, "first comment", "29/09/2021"));
-        comment_array.add(new CommentDTO("Zhou", "Shen Shen", R.drawable.img, 3, "Zhou Shen, love you", "18/09/2021"));
-        comment_array.add(new CommentDTO("Shen", "Charlie", R.drawable.img, 1, "third comment", "31/07/2021"));
+    private void setServicePackageData() {
+        package_list = new ArrayList<>();
+        package_list.add(new ServicePackageDTO(R.drawable.personal_service, "Personal shooting", "per session", "160"));
+        package_list.add(new ServicePackageDTO(R.drawable.comercial_service, "Commercial shooting", "per day", "700"));
+        package_list.add(new ServicePackageDTO(R.drawable.event_service, "Event shooting", "per hour", "1,200"));
     }
 }
